@@ -5,9 +5,9 @@ GGUF mistral model deployed as container using Docker.
 
 You need to download the model and store it in `models/` folder. 
 
-Current code assusmes you have a model in following format: `models/mistral-7b-instruct-v0.2.Q4_K_M.gguf`.
+Current code assusmes you have a model in following format: `models/Ministral-8B-Instruct-2410-IQ2_M.gguf`.
 
-You can download the above model at  https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/blob/main/mistral-7b-instruct-v0.2.Q3_K_M.gguf
+You can download the above model at https://huggingface.co/bartowski/Ministral-8B-Instruct-2410-GGUF/resolve/main/Ministral-8B-Instruct-2410-IQ2_M.gguf
 
 Once you have all the files setup, build the docker image using
 

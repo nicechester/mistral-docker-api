@@ -13,7 +13,7 @@ from typing import (
 app = FastAPI()
 
 llm = llama_cpp.Llama(
-    model_path="./models/mistral-7b-instruct-v0.2.Q3_K_M.gguf",
+    model_path="./models/Ministral-8B-Instruct-2410-IQ2_M.gguf",
     chat_format="llama-2"
     )
 
