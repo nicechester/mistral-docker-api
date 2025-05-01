@@ -13,7 +13,7 @@ from typing import (
 app = FastAPI()
 
 llm = llama_cpp.Llama(
-    model_path="./models/mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    model_path="./models/mistral-7b-instruct-v0.2.Q3_K_M.gguf",
     chat_format="llama-2"
     )
 
@@ -36,6 +36,7 @@ def read_root():
 def query_llm(query: InputQuery):
     start = time.time()
     print("Started Processing: ")
+    print("query:", query)
     outputs = llm.create_chat_completion(
         messages=query.messages,
         temperature=query.temperature,
